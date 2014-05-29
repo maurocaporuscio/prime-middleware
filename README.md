@@ -1,0 +1,4 @@
+prime-middleware
+================
+
+The pervasive vision of the future communication and computational infrastructure is that we will be virtually connected with invisible computers everywhere, embedded in the environment. In this context, the challenge is providing a middleware support that allows applications to have minimal assumptions about the environment while being able to dynamically adapt to the surrounding. Specifically, the middleware should assist applications in (i) discovering the different functionalities offered by the surrounding and benefiting from them, and (ii) being aware of, and resilient to, environmental changes.  The PRIME middleware achieves pervasive computing by adhering to REST principles. Indeed, PRIME implements the Pervasive-REST (P-REST) architectural style, which refines the well known REST architectural style, to deal with pervasive environments, and provide P-RESTful applications with the run-time support.

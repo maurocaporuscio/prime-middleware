@@ -124,9 +124,6 @@ public class PrimeApplication extends Application implements IPrimeApplication, 
 	/**
 	 * 
 	 * @param id PrimeApplication Identifier (serves as base URI for hosted resources)
-	 * @param localPort Overlay network incoming port
-	 * @param dnsAddress IP address of the DNS server
-	 * @param dnsPort IP port of the DNS server
 	 * @param httpPort HTTP port for incoming requests
 	 * @throws Exception
 	 */

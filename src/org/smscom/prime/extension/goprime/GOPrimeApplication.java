@@ -50,7 +50,7 @@ import org.smscom.prime.extension.goprime.management.servicemanagement.LocalUtil
  * @author Mauro Caporuscio
  *
  */
-public class GOPrimeApplication extends PrimeApplication{
+public class GoPrimeApplication extends PrimeApplication{
 
 	
 	protected  Logger log = (Logger)LoggerFactory.getLogger(this.getClass().getName());
@@ -67,7 +67,7 @@ public class GOPrimeApplication extends PrimeApplication{
 	 * @param id PrimeApplication Identifier (serves as base URI for hosted resources)
 	 * @throws Exception
 	 */
-	public GOPrimeApplication(String id)  throws Exception {
+	public GoPrimeApplication(String id)  throws Exception {
 		super(id);
 		
 		this.assemblym = new AssemblyManager();
@@ -79,7 +79,7 @@ public class GOPrimeApplication extends PrimeApplication{
 	 * @param httpPort
 	 * @throws Exception
 	 */
-	public GOPrimeApplication(String id, int httpPort)  throws Exception {
+	public GoPrimeApplication(String id, int httpPort)  throws Exception {
 		super(id, httpPort);
 		
 		this.assemblym = new AssemblyManager();
@@ -133,8 +133,7 @@ public class GOPrimeApplication extends PrimeApplication{
 			case RESPONSE_TIME: d.getQoS().setResponseTime(value);
 								break;
 			case COST:			d.getQoS().setCost(value);
-								break;
-								
+								break;						
 			case RELIABILITY:   d.getQoS().setReliability(value);
 								break;
 			case STRUCTURAL:    d.getQoS().setStructural(value);
@@ -166,7 +165,7 @@ public class GOPrimeApplication extends PrimeApplication{
 	/**
 	 * Returns a HTTP connection towards the resource identified by target
 	 * @param source  the CURI of the local resource 
-	 * @param target  the CURI of the target resource
+	 * @param instance the CURI of the destination resource
 	 * @return the PrimeConnection object managing the connection
 	 */
 	public IPrimeConnection getConnection(CURI source, CURI instance) {

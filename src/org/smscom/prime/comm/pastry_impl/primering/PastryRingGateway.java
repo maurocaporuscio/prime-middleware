@@ -76,9 +76,10 @@ public class PastryRingGateway{
 	 * existing ring if it can find one at the specified location, otherwise
 	 * it will start a new ring.
 	 * 
-	 * @param bindAddress the local address to bind to
-	 * @param bindport the local port to bind to 
-	 * @param bootaddress the IP:port of the node to boot from
+	 * @param localAddress the local address to bind to
+	 * @param localPort the local port to bind to 
+	 * @param remoteAddress the IP address of the node to boot from
+	 * @param remotePort the IP port of the node to boot from
 	 */
 	public PastryRingGateway(String localAddress, int localPort, String remoteAddress, int remotePort) throws Exception {
 

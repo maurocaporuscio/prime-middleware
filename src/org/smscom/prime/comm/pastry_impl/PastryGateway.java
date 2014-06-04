@@ -89,9 +89,10 @@ public class PastryGateway implements ICommGateway{
 	 * existing ring if it can find one at the specified location, otherwise
 	 * it will start a new ring.
 	 * 
-	 * @param bindAddress the local address to bind to
-	 * @param bindport the local port to bind to 
-	 * @param bootaddress the IP:port of the node to boot from
+	 * @param localAddress the local address to bind to
+	 * @param localPort the local port to bind to 
+	 * @param remoteAddress the IP address of the node to boot from
+	 * @param remotePort IP port of the node to boot from
 	 */
 	public PastryGateway(String localAddress, int localPort, String remoteAddress, int remotePort) throws Exception {
 

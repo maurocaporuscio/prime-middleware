@@ -54,7 +54,7 @@ public interface ICommGateway {
 	/**
 	 * PRIME implements the Publish/Subscribe communication paradigm.
 	 * Specifically, this method subscribes the current node for a topic of interest
-	 * @param subject the subject of interest
+	 * @param topic the subject of interest
 	 */
 	public void subscribe(URI topic);
 	

@@ -69,20 +69,20 @@ public interface IPrimeApplication {
 	
 	/**
 	 * Sets the path to the Resource Repository folder
-	 * @param the location where resource descriptions are stored.
+	 * @param path is the location where resource descriptions are stored.
 	 */
 	public abstract void setRepositoryPath(String path);
 
 	/**
 	 * Sets the path to the Temporary folder
-	 * @param the location where temporary resources will be stored.
+	 * @param path is the location where temporary resources will be stored.
 	 */
 	public abstract void setTmpPath(String path);
 	
 	
 	/**
 	 * Sets the Communication Gateway through which the PrimeApplication communicates
-	 * @param ICommGateway instance.
+	 * @param gateway instance.
 	 */
 	public abstract void setGateway(ICommGateway gateway);
 	

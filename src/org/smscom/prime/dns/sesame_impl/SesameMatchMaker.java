@@ -309,6 +309,10 @@ public class  SesameMatchMaker implements IMatchMaker{
 //		con.close();
 //	}
 	
+	/**
+	 * Load the RDF File into the KnowledBase
+	 * @param model the RDF model to load
+	 */
 	public void loadDescriptionFromModel(Model model) throws Exception{
 		
 		RepositoryConnection con = repo.getConnection();

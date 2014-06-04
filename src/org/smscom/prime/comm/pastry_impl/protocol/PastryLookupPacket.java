@@ -57,7 +57,6 @@ public class PastryLookupPacket extends PrimeLookupMessage implements ScribeCont
     * @param sourceNode the Id of the node who sent the message.
     * @param sourceCURI the CURI of the node who sent the message.
     * @param aURI The AURI of interest
-    * @param method the semantic Concept of the needed method
     */
     public PastryLookupPacket(Id sourceNode, CURI sourceCURI, AURI aURI) {
     	super(sourceCURI, aURI);
